@@ -1,0 +1,234 @@
+/* ===========================================
+            Allgemeines
+=========================================== */
+
+@font-face {
+    font-family: nunito;
+    src: url("../fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: rockSalt;
+    src: url("../fonts/RockSalt-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.fontFamily_rockSalt {
+    font-family: rockSalt;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: nunito;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ===========================================
+            Header
+=========================================== */
+header {
+    background-color: aqua;
+}
+
+header div {
+    background-color: rgb(190, 8, 8);
+    background-image: url("../img/dog_catching_snack.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* header div section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.section_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    padding: 5rem;
+}
+
+header h2 {
+    text-align: right;
+    padding-right: 2rem;
+    width: 23rem;
+    align-self: flex-end;
+    margin-right: 2rem;
+    color: #E27976;
+}
+
+
+
+/* ===========================================
+            Main section How it works
+=========================================== */
+
+
+
+.h2_main {
+    background-color: #E27976;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+}
+
+.h2_number {
+    color: #E27976;
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.h2_text {
+    text-align: center;
+    padding: 0 3rem 5rem 3rem;
+}
+
+/* ===========================================
+         Main section Whats on the menu?
+=========================================== */
+
+.div_bgImageDogCookie {
+    background-image: url("../img/dog_eating_cookies.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.div_bgImageBowl {
+    background-image: url("../img/dog_bowl.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    margin-top: 5rem;
+}
+
+.div_p {
+    margin: 7rem;
+    text-align: center;
+}
+
+.p1_textBowl,
+.p2_textBowl,
+.p3_textBowl {
+    font-size: 2rem;
+}
+
+.p1_textBowl {
+    padding-right: 20rem;
+}
+
+.p2_textBowl {
+    padding-left: 22rem;
+    padding-top: 5rem;
+}
+
+.p3_textBowl {
+    padding-right: 15rem;
+    padding-top: 5rem;
+}
+
+
+/* ===========================================
+            Footer
+=========================================== */
+footer {
+    background-color: rgb(33, 33, 33);
+    color: #fff;
+}
+
+.section1_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50px;
+    padding: 1rem 5rem;
+    width: 85%;
+}
+
+button {
+    width: 85%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-radius: 50px;
+    border: 0;
+
+    background-color: #E27976;
+    color: #fff;
+}
+
+.p_footerText {
+    text-align: center;
+    margin: 5rem 0;
+    width: 85%;
+}
+
+.p_footerCopyright {
+    padding: 2rem 0 4rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.div_social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ===========================================
+            Media screen
+=========================================== */
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .section_articlesHowItWorks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 0 10rem;
+    }
+
+    .article_howItWorks {
+        display: flex;
+        align-items: center;
+    }
+
+    .h2_text {
+        padding: 0 0 0 1rem;
+    }
+
+    /* .article_imgDogAndBowl {
+        display: flex;
+    } */
+
+}
