@@ -37,42 +37,40 @@ body {
 /* ===========================================
             Header
 =========================================== */
-header {
-    background-color: aqua;
-}
+header {}
 
-header div {
-    background-color: rgb(190, 8, 8);
+header {
+
     background-image: url("../img/dog_catching_snack.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
-/* header div section {
+
+
+/* .section_header {
     display: flex;
     flex-direction: column;
     align-items: center;
 } */
-.section_header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 header h1 {
     font-size: 2rem;
-    padding: 5rem;
+    padding: 2rem;
 }
+
+
 
 header h2 {
     text-align: right;
-    padding-right: 2rem;
-    width: 23rem;
-    align-self: flex-end;
-    margin-right: 2rem;
+    margin-left: auto;
     color: #E27976;
+    width: 50%;
+    padding-right: 2rem;
 }
 
 
@@ -131,7 +129,7 @@ header h2 {
 .p1_textBowl,
 .p2_textBowl,
 .p3_textBowl {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .p1_textBowl {
@@ -157,7 +155,7 @@ footer {
     color: #fff;
 }
 
-.section1_footer {
+.form_footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,13 +201,13 @@ button {
 }
 
 /* ===========================================
-            Media screen
+            Media screen middle
 =========================================== */
 
+
+
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+
 
     .section_articlesHowItWorks {
         display: flex;
@@ -227,8 +225,155 @@ button {
         padding: 0 0 0 1rem;
     }
 
-    /* .article_imgDogAndBowl {
+    .article_imgDogAndBowl {
         display: flex;
-    } */
+        flex-wrap: wrap;
+    }
 
+    .div_bgImageDogCookie {
+        width: 50%;
+        height: 26rem;
+    }
+
+    .div_bgImageBowl {
+        width: 50%;
+        margin-top: 0;
+        position: relative;
+        top: 5rem;
+    }
+
+    .div_p {
+        font-size: 1.5rem;
+    }
+
+    .p_footerText {
+        width: 55%;
+    }
+
+    input,
+    button {
+        width: 60%;
+    }
+
+    .div_social {
+        align-items: center;
+        width: 50%;
+        margin-left: -2rem;
+    }
+
+
+    .section_footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5rem 3rem 1rem 1rem
+    }
+
+    .p_footerCopyright {
+        padding: 0;
+    }
 }
+
+/* ===========================================
+            Media screen large
+=========================================== */
+
+@media only screen and (min-width: 1000px) {
+
+    header div {
+        display: flex;
+        height: 100%;
+    }
+
+
+    header h2 {
+        width: 50%;
+        height: 100%;
+        color: #fff;
+        background-color: #E27976;
+        font-size: 4rem;
+        padding: 5rem;
+    }
+
+    .section_header {
+        background-image: url("../img/dog_catching_snack.jpg");
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 50%;
+    }
+
+    header {
+        background-image: none;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .section_articlesHowItWorks {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .article_howItWorks {
+        flex-direction: column;
+        padding: 2rem;
+        width: 25%;
+    }
+
+    .article_imgDogAndBowl {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 2rem 2rem;
+    }
+
+    .div_bgImageBowl {
+        height: 100%;
+    }
+
+    .div_p {
+        background-color: #E27976;
+        color: #fff;
+        width: 30%;
+        margin: 0;
+        padding: 4rem 2rem;
+        /* position: relative; */
+        display: flex;
+    }
+
+    .div_p p {
+        width: 80%;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        margin: auto;
+    }
+
+    .h2_main {
+        font-size: 4rem;
+        color: #E27976;
+        background-color: #fff;
+        padding: 4rem;
+    }
+
+    input,
+    button {
+        width: 45%;
+    }
+
+    .div_bgImageDogCookie {
+        width: 30%;
+    }
+}
+
+
+
+
+
+/* .section_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
